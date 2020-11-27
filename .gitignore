@@ -6,7 +6,12 @@ yarn-debug.log*
 yarn-error.log*
 *.lcov
 
+# CommonJS modules from TypeScript compiler
 dist/
+# ES2015 build for Rollup bundler
+dist-modules/ 
+# UMD modules from Rollup bundler
+dist-umd/ 
 docs/
 examples/testing_db/
 
