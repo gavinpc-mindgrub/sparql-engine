@@ -35,7 +35,9 @@ import { PipelineStage } from './engine/pipeline/pipeline-engine'
 import { termToString, stringToTerm } from 'rdf-string'
 import * as crypto from 'crypto'
 import * as DataFactory from '@rdfjs/data-model'
-import * as uuid from 'uuid/v4'
+// See note in sparql-operators
+import * as uuid_ from "uuid/v4";
+const uuid = uuid_;
 import BGPStageBuilder from './engine/stages/bgp-stage-builder'
 import ExecutionContext from './engine/context/execution-context'
 import ContextSymbols from './engine/context/symbols'

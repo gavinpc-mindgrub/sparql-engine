@@ -39,6 +39,8 @@
   ],
   "homepage": "https://github.com/Callidon/sparql-engine#readme",
   "devDependencies": {
+    "@rollup/plugin-commonjs": "16.0.0",
+    "@rollup/plugin-node-resolve": "10.0.0",
     "@types/lodash": "^4.14.116",
     "@types/lru-cache": "^5.1.0",
     "@types/node": "^10.14.17",

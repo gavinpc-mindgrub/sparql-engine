@@ -26,9 +26,15 @@ SOFTWARE.
 
 import * as crypto from 'crypto'
 import { isNull } from 'lodash'
-import * as moment from 'moment'
+// Prevent Rollup from complaining “Cannot call a namespace”
+// Very much *not* an “awesome solution,” notwithstanding it works
+// https://github.com/jvandemo/generator-angular2-library/issues/221#issuecomment-521771632
+import * as moment_ from 'moment'
+const moment = moment_;
 import { Term } from 'rdf-js'
-import * as uuid from 'uuid/v4'
+// See above re moment_
+import * as uuid_ from 'uuid/v4'
+const uuid = uuid_;
 import { rdf } from '../../utils'
 
 /**
